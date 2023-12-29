@@ -2,29 +2,25 @@
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        longest, left, right, sub = 0, 0, 0, ''
 
-        if not s:
-            return 0
-            
-        longest = 1
-        ptr1 = 0
+        for right in range(0, len(s)):
+            while sub.__contains__(s[right]) and left < right:
+                left = left + 1
+                sub = s[left : right]
 
-        for i in range(1, len(s)):
-            sub = s[ptr1 : i]
+            sub = s[left : right + 1]
+
             longest = max(longest, len(sub))
-            #print(sub)
-            while sub.__contains__(s[i]) and ptr1 < i:
-                ptr1 = ptr1 + 1
-                sub = s[ptr1 : i]
 
         return longest
     
 
 s = Solution()
 
-print(s.lengthOfLongestSubstring("au"))
-print(s.lengthOfLongestSubstring(""))
-print(s.lengthOfLongestSubstring(" "))
-print(s.lengthOfLongestSubstring("abcabcbb"))
-print(s.lengthOfLongestSubstring("bbbbb"))
-print(s.lengthOfLongestSubstring("pwwkew"))
+assert(s.lengthOfLongestSubstring('') == 0)
+assert(s.lengthOfLongestSubstring(' ') == 1)
+assert(s.lengthOfLongestSubstring("au") == 2)
+assert(s.lengthOfLongestSubstring("abcabcbb") == 3)
+assert(s.lengthOfLongestSubstring("bbbbb") == 1)
+assert(s.lengthOfLongestSubstring("pwwkew") == 3)
