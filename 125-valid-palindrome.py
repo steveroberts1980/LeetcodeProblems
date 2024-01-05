@@ -24,6 +24,10 @@ class Solution:
         
         return True
 
+# Another solution is to use 2 pointers, one at the start and one at the end and compare while left < right.
+# Can check if is digit or alpha by comparing ord(char) for the ranges for number and character.
+
+
 s = Solution()
 
 assert(s.isPalindrome("a ba"))
