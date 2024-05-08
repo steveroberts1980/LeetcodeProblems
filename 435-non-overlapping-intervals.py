@@ -27,7 +27,6 @@ class Solution:
                 res.pop()
                 res.append(i)
 
-        print(len(intervals) - len(res))
         return len(intervals) - len(res)
 
 s = Solution()
