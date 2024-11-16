@@ -6,8 +6,8 @@ class Solution:
         max_sequence = 0
 
         for num in nums:
-            if (num - 1) in num_set:
-                continue
+            if (num - 1) in num_set: # Don't check numbers that have already been checked as part of a longer secquence.
+                continue # There is a smaller number already in the set, so we want to start checking our sequence with that.
 
             cur_seq = 1
 

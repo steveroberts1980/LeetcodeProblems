@@ -1,3 +1,9 @@
+# https://leetcode.com/problems/maximum-product-subarray/description/
+
+######################################
+# Dynamic Programming
+######################################
+
 from typing import List
 import math
 

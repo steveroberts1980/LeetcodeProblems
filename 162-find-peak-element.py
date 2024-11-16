@@ -1,5 +1,10 @@
 # https://leetcode.com/problems/find-peak-element/description/?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days&difficulty=MEDIUM%2CHARD&status=TO_DO%2CATTEMPTED&role=full-stack
 
+######################################
+# Binary Search
+######################################
+
+
 from typing import List
 
 class Solution:

@@ -1,5 +1,9 @@
 # https://leetcode.com/problems/reverse-bits/
 
+######################################
+# Bit manipulation
+######################################
+
 # My solution. Too complicated, but it works.
 class Solution:
     def reverseBits(self, n: int) -> int:

@@ -1,5 +1,10 @@
 from typing import List
 
+
+######################################
+# Binary Search
+######################################
+
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         if len(nums) == 1:

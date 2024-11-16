@@ -1,5 +1,9 @@
 # https://leetcode.com/problems/number-of-1-bits/
 
+######################################
+# Bit manipulation
+######################################
+
 class Solution:
     def hammingWeight(self, n: int) -> int:
         x = 32
