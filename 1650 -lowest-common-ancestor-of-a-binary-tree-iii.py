@@ -1,5 +1,9 @@
 # https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days
 
+##################################
+# 2 pointers, binary tree
+##################################
+
 class Node:
     def __init__(self, val):
         self.val = val
