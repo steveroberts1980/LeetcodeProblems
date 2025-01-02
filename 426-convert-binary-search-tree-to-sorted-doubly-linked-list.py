@@ -41,14 +41,35 @@ class Solution:
         first.left = last
 
         return first
+    
 
-s = Solution()
+class Solution2:
+    def treeToDoublyList(self, root: 'Optional[Node]') -> 'Optional[Node]':
+        if not root:
+            return None
+
+        stack = []
+        current = root
+
+        # In order traversal
+        while stack or current:
+            if current:
+                stack.append(current)
+                current = current.left
+            else:
+                current = stack.pop()
+                print(current.val)
+                current = current.right
+
+        return root    
+
+s = Solution2()
 
 root = Node(4, Node(2, Node(1), Node(3)), Node(5))
 
 node = s.treeToDoublyList(root)
 
-for i in range(5):
-    print(node.val)
-    node = node.right
+# for i in range(5):
+#     print(node.val)
+#     node = node.right
 
